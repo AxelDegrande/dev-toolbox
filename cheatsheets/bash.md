@@ -1,11 +1,13 @@
 # Bash Cheatsheet
 ## Navigation
+```
 pwd				/ Show current directory
 ls 				/ List files
 ls -al				/ List all files (and hidden) with details
 cd <folder>			/ Enter a directory
 cd ..				/ Go up one directory
 cd ~ 				/ Go to home directory
+```
 
 ## Files
 touch <file.txt>		/ Create a file.txt
