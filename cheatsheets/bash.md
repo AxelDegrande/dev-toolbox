@@ -18,6 +18,8 @@ mv <file.txt> <newFile.txt>	/ Revame a file to a new file
 mv <file.txt> <folder/file.txt> / Move a file to a directroy
 rm <file.txt>			/ Remove a file
 rmdir <folder/>			/ Remove a directory
+rm -r <folder>			/ Remove a direcroty and contents
+rm -r -i <folder>		/ remove a directory and contents + ask if contents must be deleted (y/n)
 ncdu				/ Consuming diskspace in directory
 ```
 
