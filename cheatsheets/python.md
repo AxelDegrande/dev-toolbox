@@ -20,7 +20,7 @@ source .venv/bin/activate
 
 3. Install packages
 ```
-pip install requests flask
+pip install PACKAGES
 ```
 
 4. Save dependencies
@@ -58,3 +58,12 @@ source .venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
+
+## How to delete a virtual environment
+Just delete the .venv file recursively.
+
+```
+rm -rf .venv/
+```
+## Tips
+- Do not move a virtual env. to a new folder. This make stuff brake.
