@@ -6,73 +6,73 @@ Edit files --> git add --> git commit --> git push
 ## Git/ GitHub workflow
 ### 1. Check what changed
 ```
-git status
+$ git status
 ```
 
 ### 2. State changes
 To stage a specific file:
 
 ```
-git add <folder/text.txt>
+$ git add <folder/text.txt>
 ```
 
 To stage everything that has changed:
 
 ```
-git add .
+$ git add .
 ```
 
 ### 3. Create a commit
 Create a commit with:
 
 ```
-git commit -m "Your message"
+$ git commit -m "Your message"
 ```
 
 ### 4. Push changes to GitHub
 ```
-git push
+$ git push
 ```
 
 ### 5. Getting changes from GitHub
 ```
-git pull
+$ git pull
 ```
 
 ## Usefull commands
 Check repository status:
 
 ```
-git status
+$ git status
 ```
 
 Show changes:
 
 ```
-git diff
+$ git diff
 ```
 
 Show remote:
 
 ```
-git remote -v
+$ git remote -v
 ```
 
 Show history:
 
 ```
-git log
+$ git log
 ```
 
 Show short history:
 ```
-git log --online
+$ git log --online
 ```
 
 Show graphic history:
 
 ```
-git log --graph
+$ git log --graph
 ```
 
 Add a .gitignore file to repo:
@@ -89,8 +89,8 @@ __pycache__/
 Go to:
 
 ```
-cd dev-toolbox/scripts
-bash gitHubSSHSetup.sh
+$ cd dev-toolbox/scripts
+$ bash gitHubSSHSetup.sh
 ```
 
 ### 1. Create a GitHub repository
@@ -105,21 +105,21 @@ A public repository means:
 To download an existing GitHub repository to your computer:
 
 ```
-git clone https://github.com/AxelDegrande/dev-toolbox.git
+$ git clone https://github.com/AxelDegrande/dev-toolbox.git
 ```
 
 Then enter the repository:
 
 ```
-cd dev-toolbox
+$ cd dev-toolbox
 ```
 
 ### 3. Create an SSH key to connect to your GitHub
 Go to home directory.
 
 ```
-cd 
-ssh-keygen -t ed25519 -C "YOUR_GITHUB_EMAIL"
+$ cd 
+$ ssh-keygen -t ed25519 -C "YOUR_GITHUB_EMAIL"
 ```
 
 When asked where to save the key, pressing Enter uses the default location.
@@ -158,20 +158,20 @@ This is the key that can be added to GitHub.
 Run:
 
 ```
-eval "$(ssh-agent -s)"
+$ eval "$(ssh-agent -s)"
 ```
 
 Then add your private key:
 
 ```
-ssh-add ~/.ssh/id_ed25519
+$ ssh-add ~/.ssh/id_ed25519
 ```
 
 ### 5. Display your public key
 Run:
 
 ```
-cat ~/.ssh/id_ed25519.pub
+$ cat ~/.ssh/id_ed25519.pub
 ```
 
 It will look approximately like:
@@ -189,7 +189,7 @@ Settings --> SSH and GPG keys --> New SSH --> Give a recognizable title --> Past
 If your repository currently uses HTTPS, check with:
 
 ```
-git remote -v
+$ git remote -v
 ```
 
 You may see:
@@ -202,13 +202,13 @@ origin  https://github.com/YOUR_USERNAME/dev-toolbox.git (push)
 Change the remote to SSH:
 
 ```
-git remote set-url origin git@github.com:YOUR_USERNAME/dev-toolbox.git
+$ git remote set-url origin git@github.com:YOUR_USERNAME/dev-toolbox.git
 ```
 
 Check again:
 
 ```
-git remote -v
+$ git remote -v
 ```
 
 You should now see:

@@ -10,7 +10,7 @@ read gitHubEmail
 
 ssh-keygen -t ed25519 -C gitHubEmail
 
-eval "(ssh-agent -s)"
+eval "$(ssh-agent -s)"
 
 ssh-add ~/.ssh/id_ed25519
 
