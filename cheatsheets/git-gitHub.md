@@ -85,6 +85,14 @@ __pycache__/
 ```
 
 ## Setup Git and GitHub
+### Use the setup script in this repo
+Go to:
+
+```
+cd dev-toolbox/scripts
+bash gitHubSSHSetup.sh
+```
+
 ### 1. Create a GitHub repository
 A public repository means:
 - Anyone can view it.
@@ -94,10 +102,10 @@ A public repository means:
 - Only people with appropriate write permissions can directly push changes.
 
 ### 2. Clone a repository
-To download an existing GitHub repository to your computer:<br>
+To download an existing GitHub repository to your computer:
 
 ```
-git clone git@github.com:YOUR_USERNAME/dev-toolbox.git
+git clone https://github.com/AxelDegrande/dev-toolbox.git
 ```
 
 Then enter the repository:
@@ -107,7 +115,10 @@ cd dev-toolbox
 ```
 
 ### 3. Create an SSH key to connect to your GitHub
+Go to home directory.
+
 ```
+cd 
 ssh-keygen -t ed25519 -C "YOUR_GITHUB_EMAIL"
 ```
 

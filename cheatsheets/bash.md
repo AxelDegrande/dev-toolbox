@@ -1,4 +1,5 @@
-# Bash Cheatsheet
+# ***Bash Cheatsheet***
+# 1. Bash in Linux/ Debian:
 ## Navigation
 ```
 pwd				/ Show current directory
@@ -52,4 +53,27 @@ apt search <package>		/ Search <package>
 ## File execution
 ```
 bash <folder/bashScript.sh>
+```
+
+# 2. Bash in WSL
+## Installing WSL
+How to install WSL and install Ubuntu
+
+Open PowerShell and type:
+
+```
+PowerShell $ wsl --install
+```
+
+To change the distribution installed, enter:
+
+```
+PowerShell $ wsl --install -d [distro]
+```
+
+## All available distros:
+To see a list of available Linux distributions available for download through the online store, enter:
+
+```
+PowerShell $ wsl --list --online
 ```
