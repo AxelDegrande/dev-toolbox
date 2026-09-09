@@ -8,6 +8,7 @@ echo "Updating package list..."
 sudo apt update
 
 PACKAGES=(
+	ssh
 	build-essential
 	curl
 	wget
