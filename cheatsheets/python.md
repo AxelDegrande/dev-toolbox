@@ -26,7 +26,7 @@ pip install PACKAGES
 4. Save dependencies
 
 ```
-pip freeze > requirements.txt
+pip freeze > dependencies.txt
 ```
 
 5. Git
@@ -56,7 +56,7 @@ source .venv/bin/activate
 4. Install project dependencies
 
 ```
-pip install -r requirements.txt
+pip install -r dependencies.txt
 ```
 
 ## How to delete a virtual environment

@@ -16,6 +16,7 @@ PACKAGES=(
 	unzip
 	tree
 	bash-completion
+	bat
 	python3
 	python3-pip
 	python3-venv
