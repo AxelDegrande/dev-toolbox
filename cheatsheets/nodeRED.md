@@ -50,3 +50,23 @@ Change the current hash-key in the settings.js file:
 nano .node-red/settings.js
 ```
 
+## How to run a Python file
+It is possible to run a Pyhton file from nodeRED, but it can only run files that do not need a virtual env. or 'while True'-loops.
+ 
+1. Use the 'exec'-command in nodeRed.
+2. Past the following code (alter):
+
+```
+python3 Projects/YOUR_PROJECT/<yourPythonFile>.py
+```
+
+## How to run a Pyhton file with a virtual env.
+You have to tell the 'exec'-command where your python environment is and in the same line execute your Python-file.
+
+1. Use the 'exec'-command in nodeRED.
+2. Past the following code (alter):
+
+```
+Projects/YOUR_PROJECT/.venv/bin/python3 Projects/YOUR_PROJECT/<yourPythonFile>.py
+```
+

@@ -48,3 +48,15 @@ git config --global user.email $gitHubEmail
 
 echo "Installation complete"
 
+while true; do
+    read -p "Do you want to add aliases to your command line? [y/n] ">
+    case $yn in
+        [Yy]* ) make install; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+alias ..='cd ..'
+alias ..2='cd ../..'
+alias ..3='cd ../../..'
