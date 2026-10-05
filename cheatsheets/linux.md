@@ -59,8 +59,10 @@ bash <folder/bashScript.sh>
 A symlink file creats a copy of a file in another directory that refersers to that file.
 
 ```
-$ ln -s 			/ Symlink link
+$ ln -s 			/ Soft symlink (This has all the file info but if you upload it to GitHub, it only uploads to where it is linked ti.
+$ ln -P				/ Hard symlink (For GitHub)
 ```
+
 
 To create a symlink file:
 
