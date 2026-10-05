@@ -55,6 +55,37 @@ apt search <package>		/ Search <package>
 bash <folder/bashScript.sh>
 ```
 
+## Symlink
+A symlink file creats a copy of a file in another directory that refersers to that file.
+
+```
+$ ln -s 			/ Symlink link
+```
+
+To create a symlink file:
+
+```
+$ ln -s /home/Documents/file.txt /home/Projects/linkFile.txt
+```
+
+To create a symlink folder:
+
+```
+$ ln -s /home/Documents/folder /home/Projects/symfolder
+```
+
+List symlink files:
+
+```
+ls -l
+```
+
+Remove a symlink:
+
+```
+unlink <path-to-symlink>
+```
+
 # 2. Bash in WSL
 ## Installing WSL
 How to install WSL and install Ubuntu
